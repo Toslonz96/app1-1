@@ -1,6 +1,6 @@
 import React,{State, useState} from "react";
 
-export default function StateFunc() {
+export default function MessageBox() {
     let [text ,setText] = useState('Hello World')
     let [size ,setSize] = useState(16)
 

@@ -1,8 +1,8 @@
 import React from 'react';
 
 import RefsArray from './refs-array';
-import StateFunc from './state-func';
+import MassageBox from './state-func';
 function App() {
-  return <StateFunc />;
+  return <MassageBox />;
 }
 export default App;
