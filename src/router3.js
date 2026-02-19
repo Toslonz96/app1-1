@@ -21,7 +21,7 @@ export default function Router3() {
             <Routes style={{margin:'20px'}}>
                 <Route path="/" element={<Home />} />
                 <Route path="/products" element={<Product />} />
-                <Route path="/member" element={<Member />} />
+                <Route path="/member" Component={Member} />
                 <Route path="/contact" element={<div style={{textAlign:"center"}}>Contact Us Page</div>} />
                 <Route path="/*" element={<div style={{textAlign:'center'}}>Error 404 Not Found</div>} />
             </Routes>
