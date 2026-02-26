@@ -7,14 +7,14 @@ export default function FormText() {
   const onBlurPassWord = () => {
     let pswd = textPswd.current.value;
     if (pswd !== "" && !pswd.match(/^[0-9a-zA-Z]+$/)) {
-      textPswd.current.value = "";
+      textPswd.current.value = ""
       alert("ต้องเป็น 0-9 หรือ A-Z เท่านั้น");
     }     
     }
 
     const onBlurPassWord2 = () => {
       if (textPswd.current.value !== textPswd2.current.value) {
-        textPswd2.current.value = "";
+        textPswd2.current.value = ""
         alert("รหัสผ่านไม่ตรงกัน");
       }
     }
@@ -51,8 +51,10 @@ export default function FormText() {
             <input
               type="password"
               id="pswd2"
-              maxLength="20"
+              maxLength="10"
+              name="pswd2"
               className="form-control form-control-sm"
+              ref={textPswd2}
               onBlur={onBlurPassWord2}
             ></input>
           </div>
@@ -67,7 +69,7 @@ export default function FormText() {
             ></textarea>
           </div>
           <div className="text-center">
-            <button type="submit" className="btn btn-sm px-4">
+            <button type="submit" className="btn btn-sm px-4 btn-primary">
               OK
             </button>
           </div>
